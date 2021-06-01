@@ -117,3 +117,19 @@ askokcancel returns a 1 or a 0, askyesno returns yes or no etc, check the docs f
 
 ## New Window
 
+as an example; to make a second window open on button click, create a button and a function called openMyWin and then put all the code for that second window in that function
+
+```
+def openMyWin():
+    # create new top level window
+    myTopWin = Toplevel()
+    myLabelWin = Label (myTopWin, text="Hello from my new Window!")
+    myLabelWin.pack()
+    myCloseButton = Button(myTopWin, text="Close Window", command=myTopWin.destroy)
+    myCloseButton.pack()
+```
+
+note: `command=myTopWin.destroy` to close a window
+
+**important quirk**
+_local variables may need to be declared as global variables for the function to work correctly; this was the case when using the Pillow library and displaying images_
