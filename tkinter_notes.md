@@ -1,5 +1,4 @@
 # Tkinter, notes
-
 freecodecamp.org
 codemy.org
 
