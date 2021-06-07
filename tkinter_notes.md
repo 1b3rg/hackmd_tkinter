@@ -129,7 +129,7 @@ def openMyWin():
     myCloseButton.pack()
 ```
 
-note: `command=myTopWin.destroy` to close a window
+**note:** `command=myTopWin.destroy` to close a window
 
-**important quirk**
-_local variables may need to be declared as global variables for the function to work correctly; this was the case when using the Pillow library and displaying images_
+**important quirk:** _local variables may need to be declared as global variables for the function to work correctly; this was the case when using the Pillow library and displaying images_
+
